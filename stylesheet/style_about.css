@@ -1,0 +1,43 @@
+
+.background-about {
+	width: 104%;
+	height: 100vh;
+	background-image: url("../images/d.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.text-about {
+	position: absolute;
+	top: 40%;
+	left: 25%;
+	color: white;
+}
+.text-about h2 {
+	font-size: 5vw;
+}
+
+.text-details {	
+	text-align:justify;
+	padding:15px 40px;
+	background-color: #696969;
+	color: white;
+	font-family:'century gothic';
+	line-height: 1.6em;
+	font-size: 18px;
+	height: 60vh;
+}
+#head{
+	text-align:center;
+	font-size:60px;
+	font-family:'Verdana';
+	color:white;
+}
+
+.image-details {
+	height: 60vh;
+}
+.image-details img {
+	max-width: 150%;
+	height: 100%;
+}

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+	<title> Reserve | Lacasa de ante </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="../images/logo-title.jpg">
+	
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<!-- Jquery -->
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<!-- Javascript -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+	 <!-- External CSS -->
+  <link rel="stylesheet" type="text/css" href="../stylesheet/style-index.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheet/style_reserve.css">
+
+</head>
+<body>
+<div class="container-main">
+		
+  <!-- Header & navigation bar -->
+ <div class="row background-reserve">	
+   <div class="col">
+     <nav class="navbar navbar-expand-md bg-dark navbar-dark  fixed-top">
+       <a class="navbar-brand" href="index.html"><img src="../images/logo.png" alt="Lacasa De Ante"></a>
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#content">
+         <span class="navbar-toggler-icon"></span>
+       </button>
+ 
+     <div class="collapse navbar-collapse" id="content">
+       <ul class="navbar-nav">
+         <li class="nav-item">
+           <a class="nav-link" href="index.html">Home</a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link active" href="reserve.html">Reserve</a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link" href="menu.html">Menu</a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link" href="event.html">Events</a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link" href="about_us.html">About Us</a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link" href="contact.html">Contact</a>
+         </li>
+       </ul>
+     </div>
+     </nav>
+   </div>
+
+   
+   <section>
+    <main>
+    <h2 id="slogan">Table Reservation Form</h2>
+    <div id="formSec" class="clearfix">
+    <form action="cancel.html" onsubmit="handleSubmit()">
+    First Name:<br>
+    <input type="text" name="fName" class="length" required>
+    <br>Last Name:<br>
+    <input type="text" name="lName" class="length" required><br>
+    Email:<br>
+    <input type="email" placeholder="example@something.com" class="length" required><br>
+    Phone no:<br/>
+    <select>
+    <option value="977">977</option>
+    <option>978</option>
+    <option>979</option>
+    <option>970</option>
+    <option>971</option>
+    <option>972</option>
+    </select>
+    <input type="number" name="number" placeholder="98480*****" required><br>
+    Date:<br>
+    <input type="date"/ required><br>
+    Time:<br>
+    <input type="time" required><br>
+    Number of Attendees:<br>
+    <select required>
+    <option value="2">2</option>
+    <option>3</option>
+    <option>4</option>
+    <option>5</option>
+    <option>6</option>
+    <option>7</option>
+    <option>8</option>
+    <option>10+</option>
+    </select><br>
+    Resevation Type:<br>
+    <select name="reserve">
+    <option value="Dinner">Dinner</option>
+    <option>VIP/Mezanine</option>
+    <option>Birthday/Aniversary</option>
+    <option>Nightlife</option>
+    <option>Private</option>
+    <option>Corporate</option>
+    <option>Holiday</option>
+    <option>Other</option>
+    </select><br>
+    Comments / Additional Requests:</br>
+    <textarea id="data_9" false name="data_9" style="width : 400px; height: 100px;" rows="6" class="form-control"></textarea></br>
+    <input type="submit" value="Reserve" id="submit">
+    </form>
+    </div>
+
+    </main>
+    </section>
+	<div id="cancel">
+	<p color="white">If you want to cancel your </br>reservation, please contact us.</br>
+	Reservations can only be </br>cancelled within a week.</p>
+	</div>
+	</div>
+ <!-- End Header & navigation bar -->
+
+ <!-- Footer -->
+  <footer>
+    <div class="row">
+      <div class="col footer">
+       <p>
+         Copyright &copy; 2020
+       </p>
+      </div>
+   </div>
+  </footer>
+  <!-- End Footer -->
+
+  </div>
+
+  <script>
+     function handleSubmit(){
+			var fName = document.form.fName.value;
+			var lName = document.form.lName.value;
+			var email = document.form.email.value;
+			var number = document.form.number.value;
+			var date = document.HTMLForm.date.value;
+			var time = document.HTMLForm.time.value;
+			var reserve= document.HTMLForm.reserve.value;
+			console.log(fName,lName,email,number,date,time,reserve);
+			if(fName==""){
+			   alert("first Name should not be empty!");
+			   return false;
+				}
+			if(lName==""){
+				alert("last Name should not be empty!");
+				return false;
+				}
+			if(email==""){
+				alert("email should not be empty!");
+				return false;
+				}
+			if(date==""){
+				alert("date should not be empty!");
+				return false;
+				}
+			if(number==""){
+				alert("Number should not be empty!");
+				return false;
+				}
+			if(time==""){
+				alert("Time" should not be empty!");
+				return false;
+				}
+			if(reserve==""){
+				alert("Reserve should not be empty!");
+				return false;
+				}
+			if(contact.length!= 10){
+				alert("Contact should be of 10 numbers");
+				return false;
+				}
+    
+		}
+  </script>
+  </body>
+ </html>
