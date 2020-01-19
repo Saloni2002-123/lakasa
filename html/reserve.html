@@ -42,7 +42,7 @@
            <a class="nav-link" href="menu.html">Menu</a>
          </li>
          <li class="nav-item">
-           <a class="nav-link" href="event.html">Events</a>
+           <a class="nav-link" href="event.html">Meals</a>
          </li>
          <li class="nav-item">
            <a class="nav-link" href="about_us.html">About Us</a>
@@ -60,7 +60,7 @@
     <main>
     <h2 id="slogan">Table Reservation Form</h2>
     <div id="formSec" class="clearfix">
-    <form action="cancel.html" onsubmit="handleSubmit()">
+    <form action="cancel.html" onsubmit="handle-submit">
     First Name:<br>
     <input type="text" name="fName" class="length" required>
     <br>Last Name:<br>
@@ -103,8 +103,8 @@
     <option>Holiday</option>
     <option>Other</option>
     </select><br>
-    Comments / Additional Requests:</br>
-    <textarea id="data_9" false name="data_9" style="width : 400px; height: 100px;" rows="6" class="form-control"></textarea></br>
+    Comments / Additional Requests:<br>
+    <textarea id="data_9" false name="data_9" style="width : 400px; height: 100px; margin-bottom: 10px;" rows="6" class="form-control" ></textarea>
     <input type="submit" value="Reserve" id="submit">
     </form>
     </div>
@@ -113,7 +113,7 @@
     </section>
 	<div id="cancel">
 	<p color="white">If you want to cancel your </br>reservation, please contact us.</br>
-	Reservations can only be </br>cancelled within a week.</p>
+	Reservations can only be </br>cancelled within 3 days.</p>
 	</div>
 	</div>
  <!-- End Header & navigation bar -->
@@ -134,48 +134,16 @@
 
   <script>
      function handleSubmit(){
-			var fName = document.form.fName.value;
-			var lName = document.form.lName.value;
+			var firstName = document.form.fName.value;
+			var lastName = document.form.lName.value;
 			var email = document.form.email.value;
-			var number = document.form.number.value;
+			var contact = document.form.number.value;
 			var date = document.HTMLForm.date.value;
 			var time = document.HTMLForm.time.value;
 			var reserve= document.HTMLForm.reserve.value;
-			console.log(fName,lName,email,number,date,time,reserve);
-			if(fName==""){
-			   alert("first Name should not be empty!");
-			   return false;
-				}
-			if(lName==""){
-				alert("last Name should not be empty!");
-				return false;
-				}
-			if(email==""){
-				alert("email should not be empty!");
-				return false;
-				}
-			if(date==""){
-				alert("date should not be empty!");
-				return false;
-				}
-			if(number==""){
-				alert("Number should not be empty!");
-				return false;
-				}
-			if(time==""){
-				alert("Time" should not be empty!");
-				return false;
-				}
-			if(reserve==""){
-				alert("Reserve should not be empty!");
-				return false;
-				}
-			if(contact.length!= 10){
-				alert("Contact should be of 10 numbers");
-				return false;
-				}
+			console.log(fName,lName,email,contact,date,time,reserve);
     
-		}
+	
   </script>
   </body>
  </html>

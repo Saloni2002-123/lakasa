@@ -12,25 +12,28 @@
 	font-size:33px;
 	top: 15%;
 	left: 40%;
-	color: white;
+	color: black;
 }
 #slogan p{
 	text-align:center;
 	font-size:25px;
-	color:white;
+	color:black;
 	
 }
 #formSec
 {
 	float:left;
 	width: 700px;
-	color:#fff;
+	color:black;
 	position:absolute;
 	top:20%;
 	left:30%;
-	padding:20px;
+	padding-left: 40px;
+	padding-bottom: 5px;
 	font-size: 20px;
 	line-height: 1.8em;	
+	background: rgba(255,255,255,0.4);
+	font-weight: bold;
 }
 .length
 {
@@ -43,18 +46,21 @@
 	background-color: #4CAF50;
   border: none;
   color: white;
-  padding: 10px 20px;
+  padding: 5px 10px;
+  
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
   cursor: pointer;
+  padding-top: 5px;
+  padding-bottom: 3px;
 }
 #cancel{
 	color:black;
 	position:absolute;
-	top:120%;
-	left:65%;
-	padding:20px;
-	background: rgba(255,255,255,0.7);
+	top:122.5%;
+	left:64.2%;
+	padding-bottom: 20px;
+	background: rgba(255,255,255,0.9);
 }

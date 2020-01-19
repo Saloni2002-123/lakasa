@@ -22,7 +22,7 @@
 	padding:15px 40px;
 	background-color: #696969;
 	color: white;
-	font-family:'century gothic';
+	font-style:calibri;
 	line-height: 1.6em;
 	font-size: 18px;
 	height: 60vh;
@@ -31,7 +31,7 @@
 	text-align:center;
 	font-size:60px;
 	font-family:'Verdana';
-	color:white;
+	color:black;
 }
 
 .image-details {
