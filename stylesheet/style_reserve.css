@@ -1,0 +1,60 @@
+/*css stylesheet of reservation*/
+.background-reserve{
+	width:104%;
+	height:150vh;
+	background-image:url("../images/tables.jpg");
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+#slogan{
+	position: absolute;
+	font-family: Helvetica, sans-serif;
+	font-size:33px;
+	top: 15%;
+	left: 40%;
+	color: white;
+}
+#slogan p{
+	text-align:center;
+	font-size:25px;
+	color:white;
+	
+}
+#formSec
+{
+	float:left;
+	width: 700px;
+	color:#fff;
+	position:absolute;
+	top:20%;
+	left:30%;
+	padding:20px;
+	font-size: 20px;
+	line-height: 1.8em;	
+}
+.length
+{
+	width:90%;
+	height:30px;
+	font-size: 18px;
+	font-weight: 400;
+}
+#submit{
+	background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+#cancel{
+	color:black;
+	position:absolute;
+	top:130%;
+	left:65%;
+	padding:5px;
+	background: rgba(255,255,255,0.7);
+}

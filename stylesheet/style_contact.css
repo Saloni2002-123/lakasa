@@ -1,0 +1,33 @@
+
+.background-contact {
+	width: 104%;
+	height:120vh;
+	background-image:url("../images/fodd.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;	
+}
+
+.text-contact {
+	position: absolute;
+	top: 40%;
+	left: 25%;
+	color: white;
+}
+.text-contact h3 {
+	font-size: 2.8vw;
+}
+
+.text-map {
+	position: absolute;
+	top: 40%;
+	left: 60%;
+	color: white;
+}
+.text-map h3 {
+	font-size: 2.8vw;
+}
+.text-map a img{
+	position: absolute;
+	top: 95%;
+	left: 45%;
+}
